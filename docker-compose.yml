@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.0
+    container_name: yale-elastic
+    environment:
+      - node.name=yale-node
+      - cluster.name=yale-cluster
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g" # LIMITAÇÃO CRUCIAL DE RAM
+      - xpack.security.enabled=false # Desativado para facilitar o seu início
+    volumes:
+      - yale-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.0
+    container_name: yale-kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
+
+volumes:
+  yale-data:
+    driver: local
