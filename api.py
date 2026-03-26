@@ -1,54 +1,72 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from elasticsearch import Elasticsearch
-from typing import Optional
+from typing import Optional, List, Any
+from pydantic import BaseModel
+import os  
 
-# 1. Inicializa a API
-app = FastAPI(title="API Catálogo Yale A975", version="1.0")
+# --- MODELOS DE DADOS (Para o Swagger e Validação) ---
+class Peca(BaseModel):
+    ref: Optional[str] = None
+    codigo: Optional[str] = None
+    descricao: Optional[str] = None
+    secao: Optional[str] = None
+    pagina: Optional[int] = None
+    imagem_ref: Optional[str] = None
+    obs: Optional[str] = None
+    quantidade: Optional[Any] = None
 
-# 2. Resolve o CORS (Permite que o React no porto 5173 fale com a API no 8000)
+class BuscaResponse(BaseModel):
+    total: int
+    page: int
+    limit: int
+    data: List[Peca]
+
+# --- INICIALIZAÇÃO ---
+app = FastAPI(title="API Catálogo Yale A975", version="1.1")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Em produção, trocas o "*" pelo URL do teu site
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# 3. Ligação à Base de Dados
-es = Elasticsearch(["http://localhost:9200"])
+ES_URL = os.getenv("ELASTIC_URL", "http://localhost:9200")
+es = Elasticsearch([ES_URL])
 INDEX_NAME = "yale_a975"
 
 @app.get("/")
 def home():
     return {
         "status": "online", 
-        "mensagem": "A API da Yale está a rodar lisinha! 🚀",
-        "documentacao": "/docs"
+        "mensagem": "API Yale Yale A975 operacional! 🚀",
+        "docs": "/docs"
     }
 
-@app.get("/api/pecas")
+@app.get("/api/pecas", response_model=BuscaResponse)
 def buscar_pecas(
-    q: Optional[str] = Query("", description="Termo de busca (nome, código, etc)"),
-    page: int = Query(1, description="Número da página para paginação"),
-    limit: int = Query(20, description="Quantidade de resultados por página")
+    q: Optional[str] = Query("", description="Termo de busca (descrição, código, etc)"),
+    page: int = Query(1, description="Número da página"),
+    limit: int = Query(20, description="Resultados por página")
 ):
-    # Calcula onde começa a busca (ex: página 2 com limite 20, começa no 20)
     start = (page - 1) * limit
     
     try:
+        # Se não houver busca, retornamos vazio de forma limpa
         if not q:
-            # Se a busca for vazia, devolvemos uma estrutura limpa em vez de um erro
             return {"total": 0, "page": page, "limit": limit, "data": []}
-            
-        # 4. A Inteligência da Busca (Motor Elasticsearch)
+
+        # Busca no Elasticsearch
+        # Nota: troquei 'nome' por 'descricao' para bater com seu JSON
         response = es.search(
             index=INDEX_NAME,
             query={
                 "multi_match": {
                     "query": q,
-                    "fields": ["nome", "secao", "codigo", "item"], # Busca inteligente em vários campos
-                    "fuzziness": "AUTO" # Tolera erros de digitação
+                    "fields": ["descricao", "codigo", "secao", "obs"],
+                    "fuzziness": "AUTO"
                 }
             },
             from_=start,
@@ -56,18 +74,20 @@ def buscar_pecas(
         )
         
         hits = response["hits"]["hits"]
-        total_encontrado = response["hits"]["total"]["value"]
+        total = response["hits"]["total"]["value"]
         
-        # Formata os dados limpinhos para o React
+        # Extrai o _source de cada resultado
         resultados = [hit["_source"] for hit in hits]
         
         return {
-            "total": total_encontrado,
+            "total": total,
             "page": page,
             "limit": limit,
             "data": resultados
         }
         
     except Exception as e:
-        # Se o Docker do Elastic morrer, a API avisa o Front-end com classe
-        raise HTTPException(status_code=500, detail=f"Erro de ligação à base de dados: {str(e)}")
+        raise HTTPException(
+            status_code=500, 
+            detail=f"Erro na busca ou conexão com Elastic: {str(e)}"
+        )
