@@ -3,4 +3,4 @@ scripts/*.pdf
 data/*.json
 __pycache__/
 venv/
-assets/ilustracoes/*.jpga
+assets/ilustracoes/*.jpg
