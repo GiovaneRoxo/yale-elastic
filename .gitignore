@@ -1,6 +1,5 @@
 elastic-data/
 scripts/*.pdf
-data/*.json
 __pycache__/
 venv/
-assets/ilustracoes/*
+
