@@ -14,13 +14,39 @@ def limpar_texto(txt):
 
 def extrair_secao(texto):
     """
-    Captura o título da seção (ex: CAPÔ, CHASSIS E ASSOALHO)
+    Captura o título da seção (ex: CAPÔ, SISTEMA DE ACELERAÇÃO... (até 2009))
     """
+    if not texto:
+        return None
+        
+    # LISTA NEGRA atualizada
+    blacklist = ["REF", "CÓDIGO", "DESCRIÇÃO", "QTDE", "OBS", "ITEM", "CHASSIS 1", "PÁGINA"]
+    
     linhas = texto.split("\n")
     for linha in linhas[:5]:
-        linha = linha.strip()
-        if linha.isupper() and len(linha) > 3:
-            return linha
+        linha_limpa = linha.strip()
+        if not linha_limpa:
+            continue
+            
+        # O PULO DO GATO: Isola a parte ANTES do parêntese.
+        # "SISTEMA GM (até 2009)" vira apenas "SISTEMA GM" para o teste
+        texto_base = linha_limpa.split('(')[0].strip()
+        
+        # 1. texto_base tem que existir e ser todo maiúsculo
+        # 2. texto_base maior que 3 letras
+        # 3. Não começa com número
+        # 4. A linha toda não contém termos da blacklist
+        if (texto_base 
+            and texto_base.isupper() 
+            and len(texto_base) > 3 
+            and not texto_base[0].isdigit() 
+            and not any(termo in linha_limpa.upper() for termo in blacklist)):
+            
+            # Cortamos o lixo se for a palavra "Figura", mas mantemos coisas como "(até 2009)"
+            titulo_final = re.split(r'\s*\([Ff][Ii][Gg][Uu][Rr][Aa]', linha_limpa)[0].strip()
+            
+            return titulo_final
+            
     return None
 
 
@@ -84,12 +110,17 @@ def extrair_pdf():
             if not texto:
                 continue
 
-            # Atualiza seção olhando página anterior
-            if i > 0:
+            # 1. TENTA ACHAR O TÍTULO NA PÁGINA ATUAL PRIMEIRO
+            secao = extrair_secao(texto)
+            
+            # 2. SE NÃO ACHAR, TENTA NA PÁGINA ANTERIOR
+            if not secao and i > 0:
                 texto_ant = pdf.pages[i - 1].extract_text()
                 secao = extrair_secao(texto_ant)
-                if secao:
-                    secao_atual = secao
+            
+            # 3. ATUALIZA A MEMÓRIA SÓ SE ACHOU ALGO VÁLIDO
+            if secao:
+                secao_atual = secao
 
             if not eh_pagina_tabela(texto):
                 continue
