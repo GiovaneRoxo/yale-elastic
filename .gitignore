@@ -2,4 +2,4 @@ elastic-data/
 scripts/*.pdf
 __pycache__/
 venv/
-
+assets/ilustracoes/*
