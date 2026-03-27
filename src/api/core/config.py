@@ -1,8 +1,5 @@
-import os
 from pydantic_settings import BaseSettings
-
-# Detecta a pasta raiz (yale-elastic/)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from typing import Optional
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Yale A975 API"
@@ -14,9 +11,10 @@ class Settings(BaseSettings):
     ELASTIC_URL: str = "http://elasticsearch:9200"
     INDEX_NAME: str = "yale_a975"
     
-    # SQLite - Caminho Absoluto
-    # Isso garante que ele aponte para /app/src/api/infra/usuarios.db
-    DATABASE_URL: str = f"sqlite:///{os.path.join(BASE_DIR, 'api', 'infra', 'usuarios.db')}"
+    # SQLite - Caminho "Hardcoded" para o ambiente Linux do Docker
+    # O Docker monta a tua pasta 'src' em '/app/src'
+    # Vamos garantir que ele aponte para lá sem erro de lógica
+    DATABASE_URL: str = "sqlite:////app/src/api/infra/usuarios.db"
 
     class Config:
         env_file = ".env"
