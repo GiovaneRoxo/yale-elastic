@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: yale_fastapi
-    working_dir: /app/backend
+    working_dir: /app/src/backend
     ports:
       - "8000:8000"
     depends_on:
@@ -13,10 +13,10 @@ services:
     volumes:
       - .:/app
     environment:
-      - PYTHONPATH=/app/backend
+      - PYTHONPATH=/app/src/backend
       - ELASTIC_URL=http://elasticsearch:9200
     restart: on-failure
-    command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
   elasticsearch:
     deploy:

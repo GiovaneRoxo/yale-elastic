@@ -3,9 +3,9 @@ from typing import Optional
 from fastapi import Depends
 
 from .schemas import GetResponse
-from api.infra.elasticsearch import es
-from api.core.config import settings
-from api.core.security import get_current_user
+from infra.elasticsearch import es
+from core.config import settings
+from core.security import get_current_user
 
 router = APIRouter(prefix="/api", tags=["Parts"])
 

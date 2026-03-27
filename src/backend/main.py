@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.modules.parts import routes as parts
-from api.modules.auth import routes as auth
-from api.infra.sqlite import engine, Base
+from modules.parts import routes as parts
+from modules.auth import routes as auth
+from infra.sqlite import engine, Base
 
 Base.metadata.create_all(bind=engine)
 
@@ -27,4 +27,4 @@ app.add_middleware(
 app.include_router(parts.router)
 app.include_router(auth.router)
 
-from api.core.security import oauth2_scheme
+from backend.core.security import oauth2_scheme

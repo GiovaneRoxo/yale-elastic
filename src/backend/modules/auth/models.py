@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean
-from api.infra.sqlite import Base # Garanta que importa o Base da infra
+from backend.infra.sqlite import Base # Garanta que importa o Base da infra
 
 class UserTable(Base):
     __tablename__ = "users"
