@@ -2,15 +2,15 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import Optional
 from fastapi import Depends
 
-from .schemas import BuscaResponse
+from .schemas import GetResponse
 from api.infra.elasticsearch import es
 from api.core.config import settings
 from api.core.security import get_current_user
 
-router = APIRouter(prefix="/api", tags=["Peças"])
+router = APIRouter(prefix="/api", tags=["Parts"])
 
-@router.get("/pecas", response_model=BuscaResponse)
-def buscar_pecas(
+@router.get("/parts", response_model=GetResponse)
+def get_parts(
     q: Optional[str] = Query("", description="Termo de busca"),
     page: int = Query(1, description="Número da página"),
     limit: int = Query(20, description="Resultados por página"),

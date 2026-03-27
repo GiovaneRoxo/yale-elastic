@@ -2,6 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from api.modules.parts import routes as parts
 from api.modules.auth import routes as auth
+from api.infra.sqlite import engine, Base
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="API Catálogo Yale A975", version="1.2")
 

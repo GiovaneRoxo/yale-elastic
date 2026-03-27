@@ -27,17 +27,17 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
     except JWTError:
         raise credentials_exception
 
-def gerar_hash_senha(senha: str) -> str:
+def get_password_hash(senha: str) -> str:
     # O bcrypt exige bytes, então codificamos a string
     senha_bytes = senha.encode('utf-8')
     salt = bcrypt.gensalt()
     hash_senha = bcrypt.hashpw(senha_bytes, salt)
     return hash_senha.decode('utf-8')
 
-def verificar_senha(senha_pura: str, senha_hash: str) -> bool:
+def verify_password(senha_pura: str, senha_hash: str) -> bool:
     return bcrypt.checkpw(senha_pura.encode('utf-8'), senha_hash.encode('utf-8'))
 
-def criar_token_acesso(data: dict):
+def create_access_token(data: dict):
     to_encode = data.copy()
     expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     to_encode.update({"exp": expire})

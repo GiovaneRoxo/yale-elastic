@@ -6,34 +6,33 @@ from fastapi.security import OAuth2PasswordRequestForm
 
 from api.infra.sqlite import get_db, engine, Base
 from api.modules.auth.models import UserTable
-from api.core.security import gerar_hash_senha, verificar_senha, criar_token_acesso
+from api.core.security import get_password_hash, verify_password, create_access_token
 
-router = APIRouter(prefix="/auth", tags=["Autenticação"])
+router = APIRouter(prefix="/auth", tags=["Autentication"])
 
 # Dica: No futuro, mova esta classe para api/modules/auth/schemas.py
 class UserCreate(BaseModel):
     name: str
     email: EmailStr
     password: str
-    empresa: Optional[str] = None
-    is_vendedor: bool = True
+    company: Optional[str] = None
+    is_seller: bool = True
 
 @router.post("/register")
-def registrar_usuario(user: UserCreate, db: Session = Depends(get_db)):
-    # Verifica se o e-mail já existe
+def register_user(user: UserCreate, db: Session = Depends(get_db)):
     db_user = db.query(UserTable).filter(UserTable.email == user.email).first()
     if db_user:
         raise HTTPException(status_code=400, detail="E-mail já cadastrado")
 
-    hashed = gerar_hash_senha(user.password)
+    hashed = get_password_hash(user.password)
     
     # Cria o novo usuário
     novo_usuario = UserTable(
         name=user.name,
         email=user.email,
         hashed_password=hashed,
-        empresa=user.empresa,
-        is_vendedor=user.is_vendedor
+        company=user.company,
+        is_seller=user.is_seller
     )
     db.add(novo_usuario)
     db.commit()
@@ -44,8 +43,8 @@ def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depend
     # O Swagger envia o email no campo 'username'
     db_user = db.query(UserTable).filter(UserTable.email == form_data.username).first()
     
-    if not db_user or not verificar_senha(form_data.password, db_user.hashed_password):
+    if not db_user or not verify_password(form_data.password, db_user.hashed_password):
         raise HTTPException(status_code=401, detail="E-mail ou senha incorretos")
     
-    token = criar_token_acesso(data={"sub": db_user.email})
+    token = create_access_token(data={"sub": db_user.email})
     return {"access_token": token, "token_type": "bearer"}
