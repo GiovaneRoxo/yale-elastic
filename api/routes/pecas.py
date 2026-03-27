@@ -2,6 +2,8 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import Optional
 from api.database import es, INDEX_NAME
 from api.models import BuscaResponse
+from api.utils.auth_utils import get_current_user
+from fastapi import Depends
 
 router = APIRouter(prefix="/api", tags=["Peças"])
 
@@ -9,7 +11,8 @@ router = APIRouter(prefix="/api", tags=["Peças"])
 def buscar_pecas(
     q: Optional[str] = Query("", description="Termo de busca"),
     page: int = Query(1, description="Número da página"),
-    limit: int = Query(20, description="Resultados por página")
+    limit: int = Query(20, description="Resultados por página"),
+    current_user: str = Depends(get_current_user)
 ):
     start = (page - 1) * limit
     try:

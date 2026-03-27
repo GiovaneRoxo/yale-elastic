@@ -9,6 +9,8 @@ services:
       - "8000:8000"
     depends_on:
       - elasticsearch
+    volumes:
+      - .:/app
     environment:
       - ELASTIC_URL=http://elasticsearch:9200
     restart: on-failure
