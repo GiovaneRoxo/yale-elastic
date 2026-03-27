@@ -4,9 +4,9 @@ from typing import Optional
 from pydantic import BaseModel, EmailStr
 from fastapi.security import OAuth2PasswordRequestForm
 
-from backend.infra.sqlite import get_db, engine, Base
-from backend.modules.auth.models import UserTable
-from backend.core.security import get_password_hash, verify_password, create_access_token
+from infra.sqlite import get_db, engine, Base
+from modules.auth.models import UserTable
+from core.security import get_password_hash, verify_password, create_access_token
 
 router = APIRouter(prefix="/auth", tags=["Autentication"])
 

@@ -27,4 +27,4 @@ app.add_middleware(
 app.include_router(parts.router)
 app.include_router(auth.router)
 
-from backend.core.security import oauth2_scheme
+from core.security import oauth2_scheme
