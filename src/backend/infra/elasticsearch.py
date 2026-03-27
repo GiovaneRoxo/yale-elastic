@@ -1,5 +1,5 @@
 from elasticsearch import Elasticsearch
-from backend.core.config import settings
+from core.config import settings
 
 es = Elasticsearch(
     settings.ELASTIC_URL,
