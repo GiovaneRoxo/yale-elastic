@@ -1,16 +1,17 @@
 version: '3.8'
 services:
   api_yale:
-    build: . # Lê o Dockerfile que acabamos de criar na pasta atual
+    build: 
+      context: .
+      dockerfile: Dockerfile
     container_name: yale_fastapi
     ports:
       - "8000:8000"
     depends_on:
       - elasticsearch
     environment:
-      # Aqui está a mágica: a API chama o banco pelo nome do serviço no Docker
       - ELASTIC_URL=http://elasticsearch:9200
-    restart: on-failure # O "Pulo do Gato": se a API capotar porque o Elastic demorou, ela reinicia sozinha!
+    restart: on-failure
 
   elasticsearch:
     deploy:
