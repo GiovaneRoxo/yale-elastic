@@ -2,10 +2,10 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import Optional
 from fastapi import Depends
 
-from api.core.elasticsearch import es, INDEX_NAME
-from api.models import BuscaResponse
-from api.core.auth_utils import get_current_user
-
+from .schemas import BuscaResponse
+from api.infra.elasticsearch import es
+from api.core.config import settings
+from api.core.security import get_current_user
 
 router = APIRouter(prefix="/api", tags=["Peças"])
 
@@ -22,7 +22,7 @@ def buscar_pecas(
             return {"total": 0, "page": page, "limit": limit, "data": []}
 
         response = es.search(
-            index=INDEX_NAME,
+            index=settings.INDEX_NAME,
             query={
                 "multi_match": {
                     "query": q,

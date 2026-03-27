@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia TODA a pasta api para dentro do container
-COPY  . .
+COPY  src/api ./src/apid
 
 ENV PYTHONPATH=/app/src
 
