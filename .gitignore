@@ -5,4 +5,5 @@ venv/
 assets/ilustracoes/
 frontend/node_modules/
 frontend/dist/
+.env/
 

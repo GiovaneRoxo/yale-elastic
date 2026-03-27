@@ -3,20 +3,16 @@ from typing import Optional
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Yale A975 API"
-    SECRET_KEY: str = "mude-me-em-producao"
+    SECRET_KEY: str
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440
-    
-    # Elasticsearch
-    ELASTIC_URL: str = "http://elasticsearch:9200"
-    INDEX_NAME: str = "yale_a975"
-    
-    # SQLite - Caminho "Hardcoded" para o ambiente Linux do Docker
-    # O Docker monta a tua pasta 'src' em '/app/src'
-    # Vamos garantir que ele aponte para lá sem erro de lógica
-    DATABASE_URL: str = "sqlite:////app/src/api/infra/usuarios.db"
+    ELASTIC_URL: str
+    INDEX_NAME: str
+    DATABASE_URL: str
 
     class Config:
-        env_file = ".env"
+        # Força o Pydantic a olhar na raiz do container, onde o volume mapeia o .env
+        env_file = "/app/.env" 
+        extra = "ignore"
 
 settings = Settings()
