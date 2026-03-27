@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from api.modules.parts import routes as parts
 from api.modules.auth import routes as auth
-from api.modules.home import routes as home
+
 app = FastAPI(title="API Catálogo Yale A975", version="1.2")
 
 app = FastAPI(
@@ -24,4 +24,4 @@ app.add_middleware(
 app.include_router(parts.router)
 app.include_router(auth.router)
 
-from api.utils.auth_utils import oauth2_scheme
+from api.core.security import oauth2_scheme

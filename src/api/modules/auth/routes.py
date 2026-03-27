@@ -4,9 +4,8 @@ from typing import Optional
 from pydantic import BaseModel, EmailStr
 from fastapi.security import OAuth2PasswordRequestForm
 
-# 1. CAMINHOS ATUALIZADOS:
-# Note que agora buscamos do 'infra' e do 'core'
-from api.infra.sqlite import get_db, UserTable, engine, Base
+from api.infra.sqlite import get_db, engine, Base
+from api.modules.auth.models import UserTable
 from api.core.security import gerar_hash_senha, verificar_senha, criar_token_acesso
 
 router = APIRouter(prefix="/auth", tags=["Autenticação"])

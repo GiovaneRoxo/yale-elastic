@@ -1,18 +1,12 @@
-from pydantic import BaseModel
-from typing import Optional, List, Any
+from sqlalchemy import Column, Integer, String, Boolean
+from api.infra.sqlite import Base # Garanta que importa o Base da infra
 
-class Peca(BaseModel):
-    ref: Optional[str] = None
-    codigo: Optional[str] = None
-    descricao: Optional[str] = None
-    secao: Optional[str] = None
-    pagina: Optional[int] = None
-    imagem_ref: Optional[str] = None
-    obs: Optional[str] = None
-    quantidade: Optional[Any] = None
+class UserTable(Base):
+    __tablename__ = "usuarios"
 
-class BuscaResponse(BaseModel):
-    total: int
-    page: int
-    limit: int
-    data: List[Peca]
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String)
+    email = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+    empresa = Column(String, nullable=True)
+    is_vendedor = Column(Boolean, default=True)
