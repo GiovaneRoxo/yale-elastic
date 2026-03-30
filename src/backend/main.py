@@ -1,30 +1,24 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from modules.parts import routes as parts
-from modules.auth import routes as auth
-from infra.sqlite import engine, Base
+from infra.sqlite import Base, engine
+from modules.auth import routes as auth_routes
+from modules.parts import routes as parts_routes
 
-Base.metadata.create_all(bind=engine)
+# 1. O app "nasce" AQUI (antes de qualquer middleware)
+app = FastAPI(title="Yale API")
 
-app = FastAPI(title="API Catálogo Yale A975", version="1.2")
-
-app = FastAPI(
-    title="API Catálogo Yale A975",
-    version="1.3",
-    # Isso aqui força o Swagger a mostrar o botão de login global
-)
-
+# 2. Agora que o app existe, adicionamos o CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+# 3. Adicionamos as rotas
+app.include_router(auth_routes.router)
+app.include_router(parts_routes.router)
 
-# Incluímos as rotas separadas
-app.include_router(parts.router)
-app.include_router(auth.router)
-
-from core.security import oauth2_scheme
+# Cria as tabelas no SQLite se não existirem
+Base.metadata.create_all(bind=engine)
