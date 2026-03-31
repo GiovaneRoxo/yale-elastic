@@ -23,7 +23,7 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const { toast } = useToast();
 
-  // Debounce: espera o usuário parar de digitar por 500ms antes de bater na API
+  // Debounce: espera o utilizador parar de digitar por 500ms antes de bater na API
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchInput);
@@ -48,6 +48,7 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
     enabled: debouncedSearch.length > 0,
   });
 
+  // O response.data do FastAPI já traz um objeto com a chave "data" contendo o array
   const parts = data?.data || [];
 
   const copyPartNumber = (partNumber: string, partId: string) => {
@@ -113,24 +114,25 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
             </TableHeader>
             <TableBody>
               {parts.map((p: any, index: number) => {
+                // Usa o ref ou o índice como fallback para a chave única
                 const uniqueId = p.ref || String(index); 
                 return (
                   <TableRow key={uniqueId} className="hover:bg-muted/30">
                     <TableCell>
                       <button
-                        onClick={() => copyPartNumber(p.part_number, uniqueId)}
+                        onClick={() => copyPartNumber(p.codigo, uniqueId)}
                         className="flex items-center gap-1.5 font-mono font-semibold text-primary hover:text-secondary transition-colors disabled:opacity-50"
-                        disabled={!p.part_number}
+                        disabled={!p.codigo}
                       >
-                        {p.part_number || 'S/N'}
+                        {p.codigo || 'S/N'}
                         {copiedId === uniqueId ? <Check className="h-3.5 w-3.5 text-success" /> : <Copy className="h-3.5 w-3.5 opacity-40" />}
                       </button>
                     </TableCell>
                     <TableCell>
-                      <p className="font-medium text-foreground">{p.description || 'Sem descrição'}</p>
+                      <p className="font-medium text-foreground">{p.descricao || 'Sem descrição'}</p>
                     </TableCell>
-                    <TableCell className="text-center text-muted-foreground">{p.section || '—'}</TableCell>
-                    <TableCell className="text-center font-medium">{p.quantity || '—'}</TableCell>
+                    <TableCell className="text-center text-muted-foreground">{p.secao || '—'}</TableCell>
+                    <TableCell className="text-center font-medium">{p.qtd || '—'}</TableCell>
                     <TableCell className="text-sm text-muted-foreground">{p.obs || '—'}</TableCell>
                   </TableRow>
                 );

@@ -1,6 +1,5 @@
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Depends
 from typing import Optional
-from fastapi import Depends
 
 from .schemas import GetResponse
 from infra.elasticsearch import es
@@ -18,18 +17,26 @@ def get_parts(
 ):
     start = (page - 1) * limit
     try:
+        # Se a pesquisa for vazia, trazemos um lote inicial (match_all)
         if not q:
-            return {"total": 0, "page": page, "limit": limit, "data": []}
+            query_body = {"match_all": {}}
+        else:
+            query_body = {
+                "multi_match": {
+                    "query": q,
+                    # Agora você pode colocar TUDO de volta aqui
+                    "fields": [
+                        "ref", "codigo", "descricao", "secao", "obs", "pagina", "imagem_ref",
+                        "quantidade.tipo", "quantidade.valor", "quantidade.A"
+                    ],
+                    "fuzziness": "AUTO",
+                    "lenient": True  # <--- O AMORTECEDOR ESTÁ AQUI
+                }
+            }
 
         response = es.search(
             index=settings.INDEX_NAME,
-            query={
-                "multi_match": {
-                    "query": q,
-                    "fields": ["descricao", "codigo", "secao", "obs"],
-                    "fuzziness": "AUTO"
-                }
-            },
+            query=query_body,
             from_=start,
             size=limit
         )

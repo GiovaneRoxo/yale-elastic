@@ -3,13 +3,13 @@ from typing import Optional, List, Any
 
 class Part(BaseModel):
     ref: Optional[str] = None
-    part_number: Optional[str] = None
-    description: Optional[str] = None
-    section: Optional[str] = None
-    pag: Optional[int] = None
-    imagem_ref: Optional[str] = None
+    codigo: Optional[str] = None
+    descricao: Optional[str] = None
+    quantidade: Optional[Any] = None 
     obs: Optional[str] = None
-    quantity: Optional[Any] = None
+    secao: Optional[str] = None
+    pagina: Optional[int] = None
+    imagem_ref: Optional[str] = None
 
 class GetResponse(BaseModel):
     total: int
