@@ -82,14 +82,15 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
   };
 
   return (
-    <div className="space-y-6 animate-fade-in relative w-full">
+    /* O 'max-w-full' e 'overflow-hidden' no pai são essenciais */
+    <div className="space-y-6 animate-fade-in relative w-full max-w-full overflow-hidden px-1">
       <div className="flex items-center gap-3">
         <Button variant="ghost" size="icon" onClick={onBack} className="hover:bg-muted">
           <ArrowLeft className="h-5 w-5" />
         </Button>
-        <div>
-          <h2 className="text-2xl font-bold text-foreground">{categoryName}</h2>
-          <p className="text-muted-foreground">Modelo: <span className="font-semibold text-foreground">{machineModel}</span></p>
+        <div className="min-w-0">
+          <h2 className="text-2xl font-bold text-foreground truncate">{categoryName}</h2>
+          <p className="text-muted-foreground truncate">Modelo: <span className="font-semibold text-foreground">{machineModel}</span></p>
         </div>
       </div>
 
@@ -116,72 +117,102 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
         </Alert>
       )}
 
-      {/* Ajuste Final: Layout Fluido sem Scroll Horizontal Forçado */}
-      <div className="rounded-lg border bg-card shadow-sm overflow-hidden w-full">
-        <div className="w-full">
-          {/* Removi o min-w fixo e table-fixed para a tabela se ajustar ao seu monitor */}
-          <Table className="w-full border-collapse">
-            <TableHeader>
-              <TableRow className="bg-muted/50">
-                <TableHead className="font-bold whitespace-nowrap">Código</TableHead>
-                <TableHead className="font-bold">Descrição</TableHead>
-                <TableHead className="font-bold text-center">Ref.</TableHead>
-                <TableHead className="font-bold text-center">Pág.</TableHead>
-                <TableHead className="font-bold text-center">Seção</TableHead>
-                <TableHead className="font-bold text-center">Qtd.</TableHead>
-                <TableHead className="font-bold">Obs.</TableHead>
-                <TableHead className="font-bold text-center">Imagem</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {parts.map((p: any, index: number) => {
-                const partId = p.ref || String(index);
-                const isCopied = copiedId === partId;
+      {/* SOLUÇÃO DEFINITIVA: table-fixed com larguras percentuais e quebra de linha interna */}
+      <div className="rounded-xl border bg-card shadow-sm w-full overflow-hidden">
+        <Table className="w-full table-fixed">
+          
+          <TableHeader>
+            <TableRow className="bg-muted/60">
+              <TableHead className="w-[12%] text-xs font-semibold">Código</TableHead>
+              <TableHead className="w-[32%] text-xs font-semibold">Descrição</TableHead>
+              <TableHead className="w-[6%] text-center text-xs">Ref.</TableHead>
+              <TableHead className="w-[6%] text-center text-xs">Pág.</TableHead>
+              <TableHead className="w-[14%] text-center text-xs">Seção</TableHead>
+              <TableHead className="w-[8%] text-center text-xs">Qtd.</TableHead>
+              <TableHead className="w-[16%] text-xs">Obs.</TableHead>
+              <TableHead className="w-[6%] text-center text-xs">Img</TableHead>
+            </TableRow>
+          </TableHeader>
 
-                return (
-                  <TableRow key={partId} className="hover:bg-muted/30">
-                    <TableCell>
-                      <button 
-                        onClick={() => copyPartNumber(p.codigo, partId)} 
-                        className="flex items-center gap-1.5 font-mono text-[11px] font-semibold text-primary"
-                      >
-                        <span className="whitespace-nowrap">{p.codigo || 'S/N'}</span>
-                        {isCopied ? <Check className="h-3 w-3 text-green-500 shrink-0" /> : <Copy className="h-3 w-3 opacity-30 shrink-0" />}
-                      </button>
-                    </TableCell>
-                    
-                    <TableCell>
-                      <p className="font-medium text-xs leading-tight line-clamp-2" title={p.descricao}>
-                        {p.descricao || 'Sem descrição'}
-                      </p>
-                    </TableCell>
+          <TableBody>
+            {parts.map((p: any, index: number) => {
+              const partId = p.ref || String(index);
+              const isCopied = copiedId === partId;
 
-                    <TableCell className="text-center text-muted-foreground text-xs">{p.ref || '—'}</TableCell>
-                    <TableCell className="text-center text-muted-foreground text-xs">{p.pagina || '—'}</TableCell>
-                    <TableCell className="text-center text-muted-foreground text-xs">{p.secao || '—'}</TableCell>
-                    <TableCell className="text-center text-xs">{formatQuantity(p.quantidade)}</TableCell>
-                    
-                    <TableCell>
-                      <p className="text-[11px] text-muted-foreground leading-tight line-clamp-2" title={p.obs}>
-                        {p.obs || '—'}
-                      </p>
-                    </TableCell>
-
-                    <TableCell className="text-center">
-                      {p.imagem_ref ? (
-                        <Button variant="outline" size="sm" className="h-8 w-8 p-0" onClick={() => setSelectedImage(p.imagem_ref)}>
-                          <Eye className="h-4 w-4" />
-                        </Button>
+              return (
+                <TableRow
+                  key={partId}
+                  className="hover:bg-muted/40 odd:bg-muted/10 align-top"
+                >
+                  {/* Código */}
+                  <TableCell className="p-2">
+                    <button
+                      onClick={() => copyPartNumber(p.codigo, partId)}
+                      className="flex items-center gap-1 font-mono text-xs font-semibold text-primary break-all"
+                    >
+                      {p.codigo || 'S/N'}
+                      {isCopied ? (
+                        <Check className="h-3 w-3 text-green-500" />
                       ) : (
-                        <span className="text-[10px] text-muted-foreground opacity-40">S/ Img</span>
+                        <Copy className="h-3 w-3 opacity-30" />
                       )}
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
-        </div>
+                    </button>
+                  </TableCell>
+
+                  {/* Descrição */}
+                  <TableCell className="p-2">
+                    <div className="text-sm leading-snug break-words">
+                      {p.descricao || 'Sem descrição'}
+                    </div>
+                  </TableCell>
+
+                  {/* Ref */}
+                  <TableCell className="text-center text-xs text-muted-foreground">
+                    {p.ref || '—'}
+                  </TableCell>
+
+                  {/* Página */}
+                  <TableCell className="text-center text-xs text-muted-foreground">
+                    {p.pagina || '—'}
+                  </TableCell>
+
+                  {/* Seção */}
+                  <TableCell className="text-center text-xs text-muted-foreground">
+                    <div className="break-words">
+                      {p.secao || '—'}
+                    </div>
+                  </TableCell>
+
+                  {/* Quantidade */}
+                  <TableCell className="text-center text-xs">
+                    {formatQuantity(p.quantidade)}
+                  </TableCell>
+
+                  {/* Observação */}
+                  <TableCell className="p-2">
+                    <div className="text-xs text-muted-foreground break-words">
+                      {p.obs || '—'}
+                    </div>
+                  </TableCell>
+
+                  {/* Imagem */}
+                  <TableCell className="text-center">
+                    {p.imagem_ref && (
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="h-8 w-8"
+                        onClick={() => setSelectedImage(p.imagem_ref)}
+                      >
+                        <Eye className="h-4 w-4" />
+                      </Button>
+                    )}
+                  </TableCell>
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
       </div>
 
       {selectedImage && createPortal(
