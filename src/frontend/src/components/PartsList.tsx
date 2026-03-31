@@ -187,6 +187,8 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
               <TableRow className="bg-muted/50">
                 <TableHead className="font-bold">Código</TableHead>
                 <TableHead className="font-bold">Descrição</TableHead>
+                <TableHead className="font-bold">Referência</TableHead>
+                <TableHead className="font-bold">Página</TableHead>
                 <TableHead className="font-bold text-center">Seção</TableHead>
                 <TableHead className="font-bold text-center w-24">Qtd.</TableHead>
                 <TableHead className="font-bold">Obs.</TableHead>
@@ -208,13 +210,11 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
                         {copiedId === uniqueId ? <Check className="h-3.5 w-3.5 text-success" /> : <Copy className="h-3.5 w-3.5 opacity-40" />}
                       </button>
                     </TableCell>
-                    <TableCell>
-                      <p className="font-medium text-foreground">{p.descricao || 'Sem descrição'}</p>
-                    </TableCell>
+                    <TableCell><p className="font-medium text-foreground">{p.descricao || 'Sem descrição'}</p></TableCell>
+                    <TableCell className="text-center text-muted-foreground">{p.ref || '—'}</TableCell>
+                    <TableCell className="text-center text-muted-foreground">{p.pagina || '—'}</TableCell>
                     <TableCell className="text-center text-muted-foreground">{p.secao || '—'}</TableCell>
-                    <TableCell className="text-center align-middle">
-                      {formatQuantity(p.quantidade)}
-                    </TableCell>
+                    <TableCell className="text-center align-middle">{formatQuantity(p.quantidade)}</TableCell>
                     <TableCell className="text-sm text-muted-foreground">{p.obs || '—'}</TableCell>
                     <TableCell className="text-center">
                       {p.imagem_ref ? (
