@@ -1,6 +1,9 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
+from modules.auth.models import UserResponse, UserTable
+from core.security import get_current_user
 
-# Se estiver no main.py, use @app.get(...
+router = APIRouter(tags=["Users"])
+
 @router.get("/users/me", response_model=UserResponse)
-def read_users_me(current_user: User = Depends(get_current_user)):
+def read_users_me(current_user: UserTable = Depends(get_current_user)):
     return current_user

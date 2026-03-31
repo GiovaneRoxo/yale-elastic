@@ -1,10 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { api } from '@/lib/api'; // Certifique-se de que o api.ts está correto com o localhost:8000
 
-// 1. O molde do Utilizador no TypeScript (deve bater com o UserCreate/UserResponse do Python)
+
 interface User {
   id: number;
-  name: string; // O FastAPI envia o nome completo aqui
+  name: string; 
   email: string;
   role: string;
 }

@@ -7,7 +7,6 @@ export default function AppHeader() {
   const { signOut, user } = useAuth(); // <-- AGORA IMPORTAMOS O 'user' AQUI
   const navigate = useNavigate();
 
-  // Função auxiliar para pegar o primeiro nome de "Giovane Silva" -> "Giovane"
   const getFirstName = (fullName: string | undefined) => {
     if (!fullName) return "Usuário"; // Fallback de segurança
     return fullName.trim().split(' ')[0];
@@ -28,14 +27,9 @@ export default function AppHeader() {
             Peça <span className="text-[#ffc107]">Certa</span>
           </h1>
         </div>
-
-        {/* Área do Utilizador */}
         <div className="flex items-center gap-6">
           <div className="hidden md:flex items-center gap-2 text-sm text-gray-300 font-medium">
             <User className="h-4 w-4" />
-            
-            {/* A ALTERAÇÃO ESTÁ AQUI: */}
-            {/* Nós pegamos o user.name (ex: "Giovane Silva") e passamos pela função de primeiro nome */}
             <span>{getFirstName(user?.name)}</span>
           </div>
           

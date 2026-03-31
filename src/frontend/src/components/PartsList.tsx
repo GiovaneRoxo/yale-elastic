@@ -4,10 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { useState, useEffect } from 'react';
-import { ArrowLeft, Search, Package, Copy, Check, AlertCircle, Eye, X } from 'lucide-react';
+import { ArrowLeft, Search, Package, Copy, Check, AlertCircle, Eye, X, Sparkles, Bot } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-// IMPORTANTE: Importamos o createPortal do React DOM
 import { createPortal } from 'react-dom'; 
 
 interface Props {
@@ -23,11 +22,17 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
   const [debouncedSearch, setDebouncedSearch] = useState(categoryName);
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  
+  // NOVO: Estados para a funcionalidade futura de IA
+  const [isSearchingAi, setIsSearchingAi] = useState(false);
+  const [aiSummary, setAiSummary] = useState<string | null>(null);
+  
   const { toast } = useToast();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchInput);
+      setAiSummary(null); 
     }, 500);
     return () => clearTimeout(timer);
   }, [searchInput]);
@@ -78,9 +83,34 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
     return '—';
   };
 
+  // NOVO: Função que será ligada ao Backend no futuro
+  const handleAiSearch = async () => {
+    if (!searchInput.trim()) {
+      toast({ title: 'Digite algo primeiro', description: 'A IA precisa de um contexto para buscar.', variant: 'destructive' });
+      return;
+    }
+    
+    setIsSearchingAi(true);
+    setAiSummary(null);
+    
+    try {
+      // TODO (Futuro): Substituir este timeout por uma chamada real: 
+      // const response = await api.get('/api/parts/ai', { params: { q: searchInput } });
+      // setAiSummary(response.data.summary);
+      
+      // Simulação para testes de UI
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      setAiSummary(`Análise Inteligente: Baseado na sua busca por "${searchInput}", encontrei as seguintes peças. Note que os rolamentos desta seção geralmente devem ser substituídos em pares para garantir a estabilidade do eixo principal.`);
+      
+    } catch (err) {
+      toast({ title: 'Erro na IA', description: 'Não foi possível gerar a análise.', variant: 'destructive' });
+    } finally {
+      setIsSearchingAi(false);
+    }
+  };
+
   return (
     <div className="space-y-6 animate-fade-in">
-      {/* Cabeçalho de Navegação */}
       <div className="flex items-center gap-3">
         <Button variant="ghost" size="icon" onClick={onBack} className="hover:bg-muted">
           <ArrowLeft className="h-5 w-5" />
@@ -91,15 +121,45 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
         </div>
       </div>
 
-      <div className="relative max-w-md">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-        <Input
-          placeholder="Buscar peças..."
-          value={searchInput}
-          onChange={e => setSearchInput(e.target.value)}
-          className="pl-10"
-        />
+      {/* ÁREA DE BUSCA ATUALIZADA */}
+      <div className="max-w-md space-y-3">
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Input
+            placeholder="Buscar peças..."
+            value={searchInput}
+            onChange={e => setSearchInput(e.target.value)}
+            className="pl-10 shadow-sm"
+          />
+        </div>
+        
+        {/* NOVO: Botão da IA */}
+        <div className="flex justify-start">
+          <Button 
+            onClick={handleAiSearch} 
+            disabled={isSearchingAi || !searchInput.trim()}
+            variant="outline" 
+            size="sm"
+            className="gap-2 border-indigo-200 bg-indigo-50/50 text-indigo-700 hover:bg-indigo-100 hover:text-indigo-800 transition-all dark:bg-indigo-950/30 dark:border-indigo-800 dark:text-indigo-400"
+          >
+            <Sparkles className={`h-4 w-4 ${isSearchingAi ? 'animate-pulse' : ''}`} />
+            {isSearchingAi ? 'Analisando catálogo...' : 'Pesquisar com IA'}
+          </Button>
+        </div>
       </div>
+
+      {/* NOVO: Painel de Resumo da IA */}
+      {aiSummary && (
+        <Alert className="bg-indigo-50 border-indigo-200 dark:bg-indigo-950/20 dark:border-indigo-900 animate-in slide-in-from-top-2">
+          <Bot className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
+          <AlertTitle className="text-indigo-800 dark:text-indigo-300 font-semibold flex items-center gap-2">
+            Assistente Técnico 
+          </AlertTitle>
+          <AlertDescription className="text-indigo-700/90 dark:text-indigo-300/80 mt-2 text-sm leading-relaxed">
+            {aiSummary}
+          </AlertDescription>
+        </Alert>
+      )}
 
       {isError && (
         <Alert variant="destructive">
@@ -127,8 +187,6 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
               <TableRow className="bg-muted/50">
                 <TableHead className="font-bold">Código</TableHead>
                 <TableHead className="font-bold">Descrição</TableHead>
-                <TableHead className="font-bold">Referência</TableHead>
-                <TableHead className="font-bold">Página</TableHead>
                 <TableHead className="font-bold text-center">Seção</TableHead>
                 <TableHead className="font-bold text-center w-24">Qtd.</TableHead>
                 <TableHead className="font-bold">Obs.</TableHead>
@@ -150,11 +208,13 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
                         {copiedId === uniqueId ? <Check className="h-3.5 w-3.5 text-success" /> : <Copy className="h-3.5 w-3.5 opacity-40" />}
                       </button>
                     </TableCell>
-                    <TableCell><p className="font-medium text-foreground">{p.descricao || 'Sem descrição'}</p></TableCell>
-                    <TableCell className="text-center text-muted-foreground">{p.ref || '—'}</TableCell>
-                    <TableCell className="text-center text-muted-foreground">{p.pagina || '—'}</TableCell>
+                    <TableCell>
+                      <p className="font-medium text-foreground">{p.descricao || 'Sem descrição'}</p>
+                    </TableCell>
                     <TableCell className="text-center text-muted-foreground">{p.secao || '—'}</TableCell>
-                    <TableCell className="text-center align-middle">{formatQuantity(p.quantidade)}</TableCell>
+                    <TableCell className="text-center align-middle">
+                      {formatQuantity(p.quantidade)}
+                    </TableCell>
                     <TableCell className="text-sm text-muted-foreground">{p.obs || '—'}</TableCell>
                     <TableCell className="text-center">
                       {p.imagem_ref ? (
@@ -178,6 +238,7 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
           </Table>
         </div>
       )}
+
       {selectedImage && createPortal(
         <div 
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-8 animate-in fade-in duration-200"
@@ -187,7 +248,6 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
             className="relative w-full max-w-5xl max-h-full flex flex-col bg-background rounded-xl border shadow-2xl overflow-hidden"
             onClick={(e) => e.stopPropagation()} 
           >
-            {/* Cabecalho do Modal com flex-none para não espremer */}
             <div className="flex-none flex items-center justify-between p-3 border-b bg-muted/30">
               <span className="text-sm font-medium text-muted-foreground truncate pr-4">
                 {selectedImage}
@@ -201,10 +261,9 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
                 <X className="h-4 w-4" />
               </Button>
             </div>
+            
             <div className="flex-1 overflow-auto p-4 flex items-center justify-center bg-zinc-100 dark:bg-zinc-950 min-h-[40vh]">
               <img 
-                // Antes era: src={`/${selectedImage}`}
-                // Agora: concatenamos a URL base da sua API
                 src={`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/${selectedImage}`} 
                 alt="Diagrama da peça" 
                 className="max-w-full max-h-[80vh] object-contain rounded-md drop-shadow-md"
@@ -215,7 +274,7 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
             </div>
           </div>
         </div>,
-        document.body // O Alvo do teletransporte
+        document.body
       )}
     </div>
   );
