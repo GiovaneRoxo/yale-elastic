@@ -4,9 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { useState, useEffect } from 'react';
-import { ArrowLeft, Search, Copy, Check, Eye, X, Sparkles, Bot } from 'lucide-react';
+import { ArrowLeft, Search, Copy, Check, Eye, X } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { Alert, AlertDescription } from "@/components/ui/alert";
 import { createPortal } from 'react-dom';
 
 interface Props {
@@ -18,19 +17,16 @@ interface Props {
 }
 
 export default function PartsList({ machineModel, categoryName, onBack }: Props) {
-  const [searchInput, setSearchInput] = useState(categoryName);
-  const [debouncedSearch, setDebouncedSearch] = useState(categoryName);
+  const [searchInput, setSearchInput] = useState(machineModel);
+  const [debouncedSearch, setDebouncedSearch] = useState(machineModel);
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [isSearchingAi, setIsSearchingAi] = useState(false);
-  const [aiSummary, setAiSummary] = useState<string | null>(null);
   
   const { toast } = useToast();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchInput);
-      setAiSummary(null);
     }, 500);
     return () => clearTimeout(timer);
   }, [searchInput]);
@@ -74,13 +70,6 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
     return qtd;
   };
 
-  const handleAiSearch = async () => {
-    setIsSearchingAi(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setAiSummary(`Análise para "${searchInput}": Itens compatíveis com a série ${machineModel}.`);
-    setIsSearchingAi(false);
-  };
-
   return (
     /* O 'max-w-full' e 'overflow-hidden' no pai são essenciais */
     <div className="space-y-6 animate-fade-in relative w-full max-w-full overflow-hidden px-1">
@@ -104,18 +93,7 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
             className="pl-10 shadow-sm"
           />
         </div>
-        <Button onClick={handleAiSearch} disabled={isSearchingAi} variant="outline" size="sm" className="gap-2 border-indigo-200 bg-indigo-50/50 text-indigo-700">
-          <Sparkles className="h-4 w-4" />
-          {isSearchingAi ? 'Analisando...' : 'Pesquisar com IA'}
-        </Button>
       </div>
-
-      {aiSummary && (
-        <Alert className="bg-indigo-50 border-indigo-200">
-          <Bot className="h-5 w-5 text-indigo-600" />
-          <AlertDescription>{aiSummary}</AlertDescription>
-        </Alert>
-      )}
 
       {/* SOLUÇÃO DEFINITIVA: table-fixed com larguras percentuais e quebra de linha interna */}
       <div className="rounded-xl border bg-card shadow-sm w-full overflow-hidden">

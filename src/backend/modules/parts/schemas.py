@@ -10,9 +10,16 @@ class Part(BaseModel):
     secao: Optional[str] = None
     pagina: Optional[int] = None
     imagem_ref: Optional[str] = None
+    modelo_catalogo: Optional[str] = None
+    maquinas_relacionadas: Optional[List[str]] = None
 
 class GetResponse(BaseModel):
     total: int
     page: int
     limit: int
     data: List[Part]
+
+
+class CatalogItem(BaseModel):
+    modelo_catalogo: str
+    maquinas_relacionadas: List[str] = []

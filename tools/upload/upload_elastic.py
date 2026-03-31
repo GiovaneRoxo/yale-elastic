@@ -5,6 +5,9 @@ from elasticsearch import Elasticsearch, helpers
 # Configuração de conexão (Ajustada para o seu Docker atual)
 es = Elasticsearch("http://localhost:9200")
 
+CATALOGO_MODELO = "A975"
+MAQUINAS_RELACIONADAS = ["GLP/GDP 40-70VX"]
+
 def carregar_dados():
     # Caminho ajustado para a sua nova estrutura de pastas
     caminho_json = 'data/A975_full_catalog.json'
@@ -19,13 +22,24 @@ def carregar_dados():
     
     print(f"Preparando {len(dados)} itens para o Elasticsearch...")
     
+    # Enriquecemos cada peça com metadados do catálogo para suportar
+    # seleção/filtro de máquinas no frontend.
+    dados_enriquecidos = [
+        {
+            **item,
+            "modelo_catalogo": CATALOGO_MODELO,
+            "maquinas_relacionadas": MAQUINAS_RELACIONADAS,
+        }
+        for item in dados
+    ]
+
     # Gerador de ações para o modo Bulk (muito mais rápido que um por um)
     acoes = [
         {
             "_index": "yale_a975",
             "_source": item
         }
-        for item in dados
+        for item in dados_enriquecidos
     ]
     
     try:
