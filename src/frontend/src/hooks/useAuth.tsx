@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { api } from '@/lib/api'; // Certifique-se de que o api.ts está correto com o localhost:8000
-
+import { api } from '@/lib/api';
 
 interface User {
   id: number;
@@ -11,7 +10,7 @@ interface User {
 
 interface AuthContextType {
   session: string | null;
-  user: User | null; // <-- ADICIONAMOS ISTO AQUI
+  user: User | null;
   signOut: () => void;
   loading: boolean; 
 }
@@ -20,24 +19,20 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [session, setSession] = useState<string | null>(null);
-  const [user, setUser] = useState<User | null>(null); // <-- Estado para o nome/dados
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // Função para buscar os dados do utilizador usando o Token
-  const getUserProfile = async (token: string) => {
+  // Removido o parâmetro 'token' que não estava sendo usado
+  const getUserProfile = async () => {
     try {
-      // Configuramos o Axios para esperar no máximo 5 segundos (5000ms)
       const response = await api.get('/users/me', { timeout: 5000 }); 
       setUser(response.data);
     } catch (error: any) {
       console.error("Falha ao buscar perfil:", error);
-      
-      // Se for um erro 401, o token expirou ou é inválido. Vamos expulsar.
       if (error.response?.status === 401) {
           signOut();
       }
     } finally {
-      // Haja o que houver, após tentar buscar ou dar timeout, libertamos a tela.
       setLoading(false);
     }
   };
@@ -46,19 +41,18 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     const token = localStorage.getItem('yale_token');
     if (token) {
       setSession(token);
-      // Nós temos o token, mas ainda não temos os dados do perfil (nome)
-      // Oapi.ts já deve ter sido configurado para ler o token do localStorage e colocar no Header Authorization automaticamente.
-      getUserProfile(token);
+      // Chama a função sem passar o parâmetro agora
+      getUserProfile();
     } else {
-      setLoading(false); // Não tem token, não tem nada pra buscar
+      setLoading(false);
     }
   }, []);
 
   const signOut = () => {
     localStorage.removeItem('yale_token');
     setSession(null);
-    setUser(null); // Limpa os dados do utilizador
-    window.location.href = '/auth'; // Expulsa o utilizador à força
+    setUser(null);
+    window.location.href = '/auth';
   };
 
   return (
