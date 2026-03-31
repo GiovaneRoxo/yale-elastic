@@ -5,6 +5,7 @@ from .schemas import GetResponse
 from infra.elasticsearch import es
 from core.config import settings
 from core.security import get_current_user
+from modules.auth.models import UserTable
 
 router = APIRouter(prefix="/api", tags=["Parts"])
 
@@ -13,7 +14,7 @@ def get_parts(
     q: Optional[str] = Query("", description="Termo de busca"),
     page: int = Query(1, description="Número da página"),
     limit: int = Query(20, description="Resultados por página"),
-    current_user: str = Depends(get_current_user)
+    current_user: UserTable = Depends(get_current_user)
 ):
     start = (page - 1) * limit
     try:

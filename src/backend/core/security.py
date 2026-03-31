@@ -5,6 +5,9 @@ from fastapi.security import OAuth2PasswordBearer
 from fastapi import Depends, HTTPException, status
 from jose import JWTError
 from jose import jwt
+from sqlalchemy.orm import Session
+from infra.sqlite import get_db
+from modules.auth.models import UserTable
 
 SECRET_KEY = os.getenv("SECRET_KEY", "sua_chave_secreta_aqui")
 ALGORITHM = "HS256"
@@ -12,7 +15,10 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 1440 # 24 horas
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
 
-def get_current_user(token: str = Depends(oauth2_scheme)):
+def get_current_user(
+    token: str = Depends(oauth2_scheme),
+    db: Session = Depends(get_db),
+):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Token inválido ou expirado. Faça login novamente.",
@@ -23,9 +29,13 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
         email: str = payload.get("sub")
         if email is None:
             raise credentials_exception
-        return email
     except JWTError:
         raise credentials_exception
+
+    user = db.query(UserTable).filter(UserTable.email == email).first()
+    if user is None:
+        raise credentials_exception
+    return user
 
 def get_password_hash(senha: str) -> str:
     # O bcrypt exige bytes, então codificamos a string
