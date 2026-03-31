@@ -4,12 +4,17 @@ import { LogOut, User } from "lucide-react";
 import makenaIcon from "@/assets/makena-icon.png";
 
 export default function AppHeader() {
-  const { signOut, user } = useAuth(); // <-- AGORA IMPORTAMOS O 'user' AQUI
+  const { signOut, user } = useAuth();
   const navigate = useNavigate();
 
-  const getFirstName = (fullName: string | undefined) => {
-    if (!fullName) return "Usuário"; // Fallback de segurança
-    return fullName.trim().split(' ')[0];
+  const getDisplayName = (name?: string, email?: string) => {
+    const normalizedName = name?.trim();
+    if (normalizedName) return normalizedName.split(" ")[0];
+
+    const emailPrefix = email?.split("@")[0]?.trim();
+    if (emailPrefix) return emailPrefix;
+
+    return "Usuário";
   };
 
   return (
@@ -30,7 +35,7 @@ export default function AppHeader() {
         <div className="flex items-center gap-6">
           <div className="hidden md:flex items-center gap-2 text-sm text-gray-300 font-medium">
             <User className="h-4 w-4" />
-            <span>{getFirstName(user?.name)}</span>
+            <span>{getDisplayName(user?.name, user?.email)}</span>
           </div>
           
           <button 
