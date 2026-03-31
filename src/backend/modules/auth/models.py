@@ -16,6 +16,7 @@ class UserResponse(BaseModel):
     id: int
     name: str
     email: str
+    is_seller: bool
 
     class Config:
         from_attributes = True
