@@ -3,10 +3,13 @@ from sqlalchemy.orm import Session
 from typing import Optional
 from pydantic import BaseModel, EmailStr
 from fastapi.security import OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordBearer
 
 from infra.sqlite import get_db, engine, Base
 from modules.auth.models import UserTable
 from core.security import get_password_hash, verify_password, create_access_token
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 router = APIRouter(prefix="/auth", tags=["Autentication"])
 
@@ -48,3 +51,31 @@ def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depend
     
     token = create_access_token(data={"sub": db_user.email})
     return {"access_token": token, "token_type": "bearer"}
+
+def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Não foi possível validar as credenciais",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    
+    try:
+        # 1. Abre o "crachá" (Token)
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        
+        # O "sub" é a convenção onde guardamos o "dono" do token na hora de gerar.
+        # Se no seu login você guardou o ID em vez do email, mude aqui.
+        email: str = payload.get("sub") 
+        if email is None:
+            raise credentials_exception
+            
+    except JWTError:
+        raise credentials_exception
+
+    # 2. Vai ao banco de dados conferir se o cara ainda existe
+    user = db.query(User).filter(User.email == email).first()
+    
+    if user is None:
+        raise credentials_exception
+        
+    return user
