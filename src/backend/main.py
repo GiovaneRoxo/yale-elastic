@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from infra.sqlite import Base, engine
 from modules.auth import routes as auth_routes
 from modules.parts import routes as parts_routes
+import os
+from fastapi.staticfiles import StaticFiles
 
 # 1. O app "nasce" AQUI (antes de qualquer middleware)
 app = FastAPI(title="Yale API")
@@ -22,3 +24,8 @@ app.include_router(parts_routes.router)
 
 # Cria as tabelas no SQLite se não existirem
 Base.metadata.create_all(bind=engine)
+
+script_dir = os.path.dirname(__file__)
+assets_path = os.path.join(script_dir, "../../assets")
+
+app.mount("/assets", StaticFiles(directory=assets_path), name="assets")

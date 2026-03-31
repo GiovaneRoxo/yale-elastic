@@ -7,6 +7,8 @@ import { useState, useEffect } from 'react';
 import { ArrowLeft, Search, Package, Copy, Check, AlertCircle, Eye, X } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+// IMPORTANTE: Importamos o createPortal do React DOM
+import { createPortal } from 'react-dom'; 
 
 interface Props {
   machineId: string;
@@ -20,8 +22,6 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
   const [searchInput, setSearchInput] = useState(categoryName);
   const [debouncedSearch, setDebouncedSearch] = useState(categoryName);
   const [copiedId, setCopiedId] = useState<string | null>(null);
-  
-  // NOVO: Estado para controlar a imagem aberta no Popup
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const { toast } = useToast();
 
@@ -58,19 +58,13 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
     setTimeout(() => setCopiedId(null), 2000);
   };
 
-  // NOVO: O "Cérebro" que desempacota a quantidade
   const formatQuantity = (qtd: any) => {
     if (!qtd) return '—';
-    
-    // Se por acaso vier como string ou numero simples, só devolve
     if (typeof qtd === 'string' || typeof qtd === 'number') return qtd;
-
-    // Se vier como objeto (o formato do seu JSON)
     if (typeof qtd === 'object') {
       if (qtd.tipo === 'unica') {
         return <span className="font-medium text-foreground">{qtd.valor || '—'}</span>;
       }
-      
       if (qtd.tipo === 'multipla') {
         return (
           <div className="flex flex-col gap-1 text-xs text-left inline-block bg-muted/30 p-1.5 rounded-md border border-border/50">
@@ -86,6 +80,7 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
 
   return (
     <div className="space-y-6 animate-fade-in">
+      {/* Cabeçalho de Navegação */}
       <div className="flex items-center gap-3">
         <Button variant="ghost" size="icon" onClick={onBack} className="hover:bg-muted">
           <ArrowLeft className="h-5 w-5" />
@@ -132,6 +127,8 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
               <TableRow className="bg-muted/50">
                 <TableHead className="font-bold">Código</TableHead>
                 <TableHead className="font-bold">Descrição</TableHead>
+                <TableHead className="font-bold">Referência</TableHead>
+                <TableHead className="font-bold">Página</TableHead>
                 <TableHead className="font-bold text-center">Seção</TableHead>
                 <TableHead className="font-bold text-center w-24">Qtd.</TableHead>
                 <TableHead className="font-bold">Obs.</TableHead>
@@ -153,19 +150,12 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
                         {copiedId === uniqueId ? <Check className="h-3.5 w-3.5 text-success" /> : <Copy className="h-3.5 w-3.5 opacity-40" />}
                       </button>
                     </TableCell>
-                    <TableCell>
-                      <p className="font-medium text-foreground">{p.descricao || 'Sem descrição'}</p>
-                    </TableCell>
+                    <TableCell><p className="font-medium text-foreground">{p.descricao || 'Sem descrição'}</p></TableCell>
+                    <TableCell className="text-center text-muted-foreground">{p.ref || '—'}</TableCell>
+                    <TableCell className="text-center text-muted-foreground">{p.pagina || '—'}</TableCell>
                     <TableCell className="text-center text-muted-foreground">{p.secao || '—'}</TableCell>
-                    
-                    {/* Aqui nós chamamos a inteligência da quantidade */}
-                    <TableCell className="text-center align-middle">
-                      {formatQuantity(p.quantidade)}
-                    </TableCell>
-                    
+                    <TableCell className="text-center align-middle">{formatQuantity(p.quantidade)}</TableCell>
                     <TableCell className="text-sm text-muted-foreground">{p.obs || '—'}</TableCell>
-                    
-                    {/* NOVO: Botão para abrir o Popup da Imagem */}
                     <TableCell className="text-center">
                       {p.imagem_ref ? (
                         <Button 
@@ -188,19 +178,17 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
           </Table>
         </div>
       )}
-
-      {/* NOVO: O Popup (Modal) da Imagem */}
-      {selectedImage && (
+      {selectedImage && createPortal(
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-in fade-in duration-200"
-          onClick={() => setSelectedImage(null)} // Fecha ao clicar fora
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-8 animate-in fade-in duration-200"
+          onClick={() => setSelectedImage(null)} 
         >
           <div 
-            className="relative bg-background rounded-lg border shadow-2xl max-w-5xl max-h-[90vh] overflow-hidden flex flex-col"
-            onClick={(e) => e.stopPropagation()} // Impede que o clique dentro da imagem feche o popup
+            className="relative w-full max-w-5xl max-h-full flex flex-col bg-background rounded-xl border shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()} 
           >
-            {/* Cabecalho do Modal */}
-            <div className="flex items-center justify-between p-3 border-b bg-muted/30">
+            {/* Cabecalho do Modal com flex-none para não espremer */}
+            <div className="flex-none flex items-center justify-between p-3 border-b bg-muted/30">
               <span className="text-sm font-medium text-muted-foreground truncate pr-4">
                 {selectedImage}
               </span>
@@ -213,21 +201,21 @@ export default function PartsList({ machineModel, categoryName, onBack }: Props)
                 <X className="h-4 w-4" />
               </Button>
             </div>
-            
-            {/* Área da Imagem em si */}
-            <div className="p-4 overflow-auto flex items-center justify-center bg-zinc-100 dark:bg-zinc-950">
-              {/* O React tenta buscar a imagem no caminho absoluto do site */}
+            <div className="flex-1 overflow-auto p-4 flex items-center justify-center bg-zinc-100 dark:bg-zinc-950 min-h-[40vh]">
               <img 
-                src={`/${selectedImage}`} 
+                // Antes era: src={`/${selectedImage}`}
+                // Agora: concatenamos a URL base da sua API
+                src={`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/${selectedImage}`} 
                 alt="Diagrama da peça" 
-                className="max-w-full max-h-[75vh] object-contain rounded-md"
+                className="max-w-full max-h-[80vh] object-contain rounded-md drop-shadow-md"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://placehold.co/600x400/1a2332/FFF?text=Imagem+N%C3%A3o+Encontrada';
+                  (e.target as HTMLImageElement).src = 'https://placehold.co/800x600/1a2332/FFF?text=Imagem+N%C3%A3o+Encontrada';
                 }}
               />
             </div>
           </div>
-        </div>
+        </div>,
+        document.body // O Alvo do teletransporte
       )}
     </div>
   );
