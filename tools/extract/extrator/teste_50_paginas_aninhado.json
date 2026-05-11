@@ -1,0 +1,4622 @@
+[
+    {
+        "catalog": "A959",
+        "forklifts": "",
+        "ref": "",
+        "code": "550138871",
+        "description": "Operating Manual",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "PUBLICATIONS",
+        "pag": 6
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "",
+        "ref": "",
+        "code": "524301698",
+        "description": "Service Manual (Complete)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "PUBLICATIONS",
+        "pag": 6
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "",
+        "ref": "",
+        "code": "550138873",
+        "description": "Parts Manual",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "PUBLICATIONS",
+        "pag": 6
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "1",
+        "code": "272303000",
+        "description": "Label (No Step/No Ride/Pinch Point)",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "2",
+        "code": "272213500",
+        "description": "Label (Lifting Hook)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "3",
+        "code": "524139322",
+        "description": "Label (Tiller Handle Yale)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "4",
+        "code": "580022962",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "5",
+        "code": "272213200",
+        "description": "Label (No Riders)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "6",
+        "code": "272219100",
+        "description": "Label (Yale Logo)",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "7",
+        "code": "582057231",
+        "description": "Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "8",
+        "code": "272105600",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "9",
+        "code": "524141524",
+        "description": "Cover , MDU Plate",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "10",
+        "code": "580013326",
+        "description": "Cover , Tiller Ring",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "11",
+        "code": "524327019",
+        "description": "Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "12",
+        "code": "524141523",
+        "description": "Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "12",
+        "code": "550060285",
+        "description": "Cover , Key-Pad",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "Option",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "13",
+        "code": "580093734",
+        "description": "Clip",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "14",
+        "code": "582020332",
+        "description": "Label (LH Switch Functions)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "15",
+        "code": "582015332",
+        "description": "Label (RH Switch Functions)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "16",
+        "code": "277458400",
+        "description": "Cushion",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "17",
+        "code": "580012959",
+        "description": "Spacer",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "18",
+        "code": "580014880",
+        "description": "Label (Snowflake)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "19",
+        "code": "524216191",
+        "description": "Label (Warranty)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "Brazilian",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "20",
+        "code": "580053923",
+        "description": "Instruction Label",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "21",
+        "code": "524242350",
+        "description": "Label (Yale Logo)",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "22",
+        "code": "580053763",
+        "description": "Bumper",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "23",
+        "code": "272033100",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "24",
+        "code": "580038954",
+        "description": "Rivet",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "B10109",
+        "forklifts": "A959",
+        "ref": "25",
+        "code": "582010233",
+        "description": "Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "COVERS AND ADHESIVE LABELS",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "1",
+        "code": "449001014",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "2",
+        "code": "449021001",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "3",
+        "code": "582057234",
+        "description": "Hook",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "5",
+        "code": "449015098",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "6",
+        "code": "272470200",
+        "description": "Bumper",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "7",
+        "code": "582023708",
+        "description": "Roller",
+        "quantity": {
+            "type": "unique",
+            "value": "5"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "8",
+        "code": "449015135",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "9",
+        "code": "580013298",
+        "description": "Shock Absorber",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "11",
+        "code": "582057232",
+        "description": "Key",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "12",
+        "code": "550141841",
+        "description": "Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "13",
+        "code": "582057234",
+        "description": "Hook",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "BATTERY COMPARTMENT LATERAL EXTRACTION",
+        "pag": 5
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "1",
+        "code": "580092328",
+        "description": "Caster Wheel Assembly",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "2",
+        "code": "931015914",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "3",
+        "code": "580037730",
+        "description": "Bushing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "4",
+        "code": "580092729",
+        "description": "Swivel Fork",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "5",
+        "code": "580092728",
+        "description": "Wheel",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "6",
+        "code": "582057746 / 015120100",
+        "description": "Ball Bearing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "7",
+        "code": "580092727",
+        "description": "Axle Shaft",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "8",
+        "code": "524148554",
+        "description": "Locknut",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "9",
+        "code": "580013314",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "10",
+        "code": "580017382",
+        "description": "Spacer (1 mm)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "10",
+        "code": "580013312",
+        "description": "Spacer (2 mm)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "SUPPORTS AND CASTER WHEELS",
+        "pag": 7
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "",
+        "code": "580040114",
+        "description": "Transmission Assy",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "1",
+        "code": "502566901",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "2",
+        "code": "449015014",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "3",
+        "code": "580041303",
+        "description": "Gear",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "4",
+        "code": "580014438",
+        "description": "Seal",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "5",
+        "code": "501989923",
+        "description": "Snap Ring",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "6",
+        "code": "501989907",
+        "description": "Snap Ring",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "7",
+        "code": "580014439",
+        "description": "Shim",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "8",
+        "code": "580014440",
+        "description": "Shim",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "9",
+        "code": "580014441",
+        "description": "Bearing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "10",
+        "code": "580014457",
+        "description": "Kit-Gear and Pinion",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "11",
+        "code": "580041309",
+        "description": "Transmission Housing",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "12",
+        "code": "272393000",
+        "description": "Key",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "13",
+        "code": "273129300",
+        "description": "Key",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "14",
+        "code": "272019300",
+        "description": "Bearing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "15",
+        "code": "272006900",
+        "description": "Shim",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "16",
+        "code": "272040800",
+        "description": "Spacer",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "17",
+        "code": "580041302",
+        "description": "Gear",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "18",
+        "code": "272386700",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "19",
+        "code": "272090800",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "20",
+        "code": "580014446",
+        "description": "Bearing",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "21",
+        "code": "900005220",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "6"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "22",
+        "code": "272013700",
+        "description": "Gasket",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "23",
+        "code": "580014448",
+        "description": "Fitting",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "24",
+        "code": "580014447",
+        "description": "Drain Plug",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "25",
+        "code": "580023467",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "26",
+        "code": "272053000",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "27",
+        "code": "580013479",
+        "description": "Drive Wheel (Topthane, 92Sh)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "27",
+        "code": "580022041",
+        "description": "Drive Wheel (Rubber, 73Sh)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "27",
+        "code": "580013477",
+        "description": "Drive Wheel (Non-Marking, 75Sh)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "27",
+        "code": "580013478",
+        "description": "Drive Wheel (Gripped) (Cold Storage, 75Sh)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "27",
+        "code": "580038927",
+        "description": "Drive Wheel (Antistatic Vulkollan 92Sh)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "27",
+        "code": "580041174",
+        "description": "Drive Wheel (Vulkollan, 92Sh)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "28",
+        "code": "449021010",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "5"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "29",
+        "code": "582021324 / 449001058",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "5"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "30",
+        "code": "580054707",
+        "description": "Shim",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "31",
+        "code": "582002469",
+        "description": "Block",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "32",
+        "code": "449021006",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "6"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "33",
+        "code": "504057795 / 449022013",
+        "description": "Lockwasher",
+        "quantity": {
+            "type": "unique",
+            "value": "6"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "34",
+        "code": "449001301",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "12-15",
+        "ref": "35",
+        "code": "449001015",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "TRACTION UNIT",
+        "pag": 9
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "",
+        "code": "580090778",
+        "description": "Electric Motor Assembly",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "1",
+        "code": "580094593",
+        "description": "Terminal",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "2",
+        "code": "580094595",
+        "description": "End Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "3",
+        "code": "580014499",
+        "description": "Bearing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "4",
+        "code": "580070960",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "5",
+        "code": "580094601",
+        "description": "Ring",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "6",
+        "code": "580094599",
+        "description": "Wheel",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "7",
+        "code": "580094597",
+        "description": "Support Plate",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "8",
+        "code": "580094598",
+        "description": "Spacer",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "9",
+        "code": "580094596",
+        "description": "Speed Sensor",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "9",
+        "code": "582005003",
+        "description": "Speed Sensor",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "10",
+        "code": "580094623",
+        "description": "Oil Seal",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "11",
+        "code": "015915100",
+        "description": "Snap Ring",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "12",
+        "code": "640046901",
+        "description": "Snap Ring",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "13",
+        "code": "580094594",
+        "description": "End Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "14",
+        "code": "580094592",
+        "description": "Stator",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "15",
+        "code": "580094600",
+        "description": "Rotor",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "16",
+        "code": "449015002",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "6"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "17",
+        "code": "504057745",
+        "description": "Disk",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10113",
+        "ref": "18",
+        "code": "580059760",
+        "description": "Sensor (Temperature)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TRACTION MOTOR",
+        "pag": 11
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "1",
+        "code": "582026221",
+        "description": "Brake Assy",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "1",
+        "code": "582053921",
+        "description": "Brake Assy",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "2",
+        "code": "580094788",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "3",
+        "code": "582031453",
+        "description": "Coil",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "4",
+        "code": "580035384",
+        "description": "Hub",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "5",
+        "code": "582031452",
+        "description": "Brake Disk",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "6",
+        "code": "580088527",
+        "description": "Flange",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "7",
+        "code": "580088528",
+        "description": "Band",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10114",
+        "ref": "8",
+        "code": "524213454",
+        "description": "Dust Cap",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTROMAGNETIC BRAKE",
+        "pag": 12
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "1",
+        "code": "449021006",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "2",
+        "code": "931701910",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "3",
+        "code": "580023593",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "4",
+        "code": "550142266",
+        "description": "Tiller Wldmt",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "5",
+        "code": "580013298",
+        "description": "Shock Absorber",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "6",
+        "code": "580013129",
+        "description": "Casting",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "7",
+        "code": "272106000",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "8",
+        "code": "580035765",
+        "description": "Shock Absorber",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "9",
+        "code": "272087200",
+        "description": "Pin",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "10",
+        "code": "272027800",
+        "description": "Pin",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "11",
+        "code": "272006400",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "12",
+        "code": "272015100",
+        "description": "Bushing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "13",
+        "code": "580013974",
+        "description": "Sensor",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "13",
+        "code": "582001198",
+        "description": "Sensor",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "14",
+        "code": "272330200",
+        "description": "Support",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "15",
+        "code": "272466100",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "15",
+        "code": "580008011",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "15",
+        "code": "940004903",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "Not Illustrated",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "16",
+        "code": "580013482",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "16",
+        "code": "932201911",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "16",
+        "code": "449021001",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "Not Illustrated",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "17",
+        "code": "273058800",
+        "description": "Plug",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10115",
+        "ref": "18",
+        "code": "582034038",
+        "description": "Wire Harness , Tiller",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "TILLER",
+        "pag": 15
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "",
+        "code": "582033654",
+        "description": "Tiller Head",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "1",
+        "code": "580026296",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "2",
+        "code": "940004902",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "3",
+        "code": "582007131",
+        "description": "Accelerator Control Knob (RH Butterfly)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "4",
+        "code": "580012962",
+        "description": "Bushing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "5",
+        "code": "582010514",
+        "description": "Cover (Belly Switch)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "5",
+        "code": "580011991",
+        "description": "Cover (Belly Switch)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "6",
+        "code": "580082841",
+        "description": "Locking Lever (Belly Spring)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "7",
+        "code": "580038175",
+        "description": "Spring (Cover, Belly)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "8",
+        "code": "580034974",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "9",
+        "code": "582019747",
+        "description": "Plate",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "10",
+        "code": "582015784",
+        "description": "Bushing",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "11",
+        "code": "524338448",
+        "description": "Tiller Head Assembly (Lower Half) (Composite)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "12",
+        "code": "932200901",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "13",
+        "code": "582007134",
+        "description": "Cover , Rear (For Push Button)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "14",
+        "code": "524292775",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "15",
+        "code": "580079167",
+        "description": "Support Clip",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "16",
+        "code": "582015751",
+        "description": "Printed Circuit Board (MULTICAN)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "17",
+        "code": "582010515",
+        "description": "Camshaft , Direction Control",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "17",
+        "code": "580013106",
+        "description": "Camshaft , Direction Control",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "18",
+        "code": "582007130",
+        "description": "Accelerator Control Knob",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "19",
+        "code": "580060389",
+        "description": "Spring , Directional Control Return",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "20",
+        "code": "582015752",
+        "description": "Tiller Head (Upper Half)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "20",
+        "code": "524228248",
+        "description": "Tiller Head (Upper Half)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "21",
+        "code": "580012969",
+        "description": "Spring (Horn/Snail)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "22",
+        "code": "582005203",
+        "description": "Horn Button Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "23",
+        "code": "580012970",
+        "description": "Spring , Directional Control Return",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "24",
+        "code": "582020280",
+        "description": "Push Button Switch Assy (Proportional)",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "25",
+        "code": "580055435",
+        "description": "Rubber Cover (Proportional Version)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "26",
+        "code": "582007128",
+        "description": "Push Button Switch Assembly (On-Off)",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "27",
+        "code": "582015753",
+        "description": "Push Button Switch (On-Off)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "28",
+        "code": "580026824",
+        "description": "Microswitch (On-Off, Molex Connector)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10116",
+        "ref": "29",
+        "code": "524144372",
+        "description": "Spring (Quick Pick)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONTROL BOX PROPORTIONAL VERSION",
+        "pag": 17
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "7",
+        "code": "580092138",
+        "description": "Switch (Emergency Disconnect)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "8",
+        "code": "273004100",
+        "description": "BDI And Hourmeter",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "9",
+        "code": "524327019",
+        "description": "Cover",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "10",
+        "code": "520038883",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "11",
+        "code": "449021002",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "5"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "12",
+        "code": "580094362",
+        "description": "Ignition Switch",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "12",
+        "code": "582016205",
+        "description": "Ignition Switch",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "13",
+        "code": "582017910",
+        "description": "Key",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "14",
+        "code": "580001407",
+        "description": "Clamp",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "15",
+        "code": "582036781",
+        "description": "Isolator",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "16",
+        "code": "449021001",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "6"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "17",
+        "code": "449015014",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "18",
+        "code": "580009061",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "19",
+        "code": "580077549",
+        "description": "Fuse (300 Amp)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "20",
+        "code": "580093629",
+        "description": "Controller",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "21",
+        "code": "580063867",
+        "description": "Support",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "22",
+        "code": "506395532",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "23",
+        "code": "505966599",
+        "description": "Fuse (3 Amp)",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "24",
+        "code": "505972528",
+        "description": "Fuse (5 Amp)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "25",
+        "code": "505972555",
+        "description": "Fuse (10 Amp)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "26",
+        "code": "580088450",
+        "description": "Fuse Holder",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "27",
+        "code": "580066344",
+        "description": "Fuse Holder (10 Amp)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "28",
+        "code": "449015112",
+        "description": "Locknut",
+        "quantity": {
+            "type": "unique",
+            "value": "3"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "29",
+        "code": "449015135",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "7"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "30",
+        "code": "449021003",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "12"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "31",
+        "code": "580013298",
+        "description": "Shock Absorber",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "32",
+        "code": "582046477",
+        "description": "Relay (Mini SPDT WP with Diode)",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "33",
+        "code": "580091806",
+        "description": "Horn",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "34",
+        "code": "449001412",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "35",
+        "code": "449001170",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10117",
+        "ref": "38",
+        "code": "580093385",
+        "description": "Wire Harness",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "ELECTRICAL ARRANGEMENT",
+        "pag": 3
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "1",
+        "code": "580039028",
+        "description": "Battery Connector",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "2",
+        "code": "580039027",
+        "description": "Battery Cable ( - )",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "3",
+        "code": "580039026",
+        "description": "Battery Cable ( + )",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "4",
+        "code": "580039025",
+        "description": "Battery Connector Housing",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "5",
+        "code": "580039032",
+        "description": "Battery Connector and Cable Assembly",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "6",
+        "code": "580039029",
+        "description": "Battery Connector Housing",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "7",
+        "code": "580039030",
+        "description": "Battery Cable ( + )",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "8",
+        "code": "580039031",
+        "description": "Battery Cable ( - )",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "9",
+        "code": "580093537",
+        "description": "Power Cable",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "10",
+        "code": "580093319",
+        "description": "Power Cable",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "11",
+        "code": "580093321",
+        "description": "Power Cable",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "12",
+        "code": "580093320",
+        "description": "Power Cable",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "13",
+        "code": "580093316",
+        "description": "Power Cable",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "14",
+        "code": "580093317",
+        "description": "Power Cable",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10118",
+        "ref": "15",
+        "code": "580093318",
+        "description": "Power Cable",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "POWER CABLES (FIGURE 2-2)",
+        "pag": 4
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "1",
+        "code": "580040456",
+        "description": "Wire Seal (Yellow)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "2",
+        "code": "278131700",
+        "description": "Pin Terminal",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "3",
+        "code": "580065044",
+        "description": "Electrical Connector (6 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "4",
+        "code": "278130600",
+        "description": "Terminal (5 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "5",
+        "code": "580059765",
+        "description": "Connector (4 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "5",
+        "code": "278130800",
+        "description": "Connector (4 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "6",
+        "code": "272478100",
+        "description": "Connector (3 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "7",
+        "code": "278131200",
+        "description": "Connector (2 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "8",
+        "code": "580049117",
+        "description": "Connector (1 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "9",
+        "code": "580065043",
+        "description": "Electrical Connector (6 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "10",
+        "code": "278130700",
+        "description": "Connector (5 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "11",
+        "code": "580035032",
+        "description": "Connector (4 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "12",
+        "code": "580062118",
+        "description": "Connector (3 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "13",
+        "code": "580035031",
+        "description": "Connector (2 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "14",
+        "code": "580049116",
+        "description": "Connector (1 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "15",
+        "code": "580035034",
+        "description": "Terminal (Pin)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "16",
+        "code": "518445605",
+        "description": "Connector (4 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "17",
+        "code": "518445601",
+        "description": "Pin",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "18",
+        "code": "518445608",
+        "description": "Connector (6 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "19",
+        "code": "518445602",
+        "description": "Socket",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "20",
+        "code": "518445610",
+        "description": "Connector (8 Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "21",
+        "code": "504064720",
+        "description": "Connector",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "22",
+        "code": "505968568",
+        "description": "Terminal (Socket)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "23",
+        "code": "580068946",
+        "description": "Lock",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "24",
+        "code": "520202606",
+        "description": "Connector (35-Way)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "25",
+        "code": "520202601",
+        "description": "Connector (Socket Female)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "26",
+        "code": "524175704",
+        "description": "Connector",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "27",
+        "code": "580034053",
+        "description": "Blade Terminal (Red - Sec. 1,5mm - Male)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "28",
+        "code": "524152702",
+        "description": "Insulator",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "29",
+        "code": "520038850",
+        "description": "Connector",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "30",
+        "code": "580014685",
+        "description": "Extractor",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "31",
+        "code": "580014686",
+        "description": "Pliers",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "32",
+        "code": "580080969",
+        "description": "Terminal (Blade)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "33",
+        "code": "582000705",
+        "description": "Terminal",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "34",
+        "code": "582008405",
+        "description": "Connector (With Bridge)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "35",
+        "code": "582008406",
+        "description": "Connector (With Bridge)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10119",
+        "ref": "36",
+        "code": "580039193",
+        "description": "Connector (Secondary Lock)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "CONNECTORS, CONTACTS, TOOLS",
+        "pag": 207
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "1",
+        "code": "449034030",
+        "description": "Roll Pin",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "2",
+        "code": "580013309",
+        "description": "Pin",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "3",
+        "code": "449034082",
+        "description": "Roll Pin",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "4",
+        "code": "272078800",
+        "description": "Pin",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "5",
+        "code": "272008800",
+        "description": "Grease Fitting",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "6",
+        "code": "580013311",
+        "description": "Rocker Arm",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "7",
+        "code": "272065200",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "8"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "8",
+        "code": "272006400",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "8"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "9",
+        "code": "580038706",
+        "description": "Roller Assembly",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "10",
+        "code": "580038708",
+        "description": "Roller",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "11",
+        "code": "580038709",
+        "description": "Bushing",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "12",
+        "code": "015120400",
+        "description": "Ball Bearing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "13",
+        "code": "580037672",
+        "description": "Seal",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10120",
+        "ref": "14",
+        "code": "580037615",
+        "description": "Bushing",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "LOAD WHEELS (FIGURE 3-1) TANDEM",
+        "pag": 302
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "1",
+        "code": "277263400",
+        "description": "Fitting",
+        "quantity": {
+            "type": "variable",
+            "value": "A:2 B:3"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "2",
+        "code": "277263200",
+        "description": "Fitting",
+        "quantity": {
+            "type": "variable",
+            "value": "A:2 B:1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "3",
+        "code": "580013476",
+        "description": "Hydraulic Tube",
+        "quantity": {
+            "type": "variable",
+            "value": "A:1 B:1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "4",
+        "code": "580013345",
+        "description": "Tube Assy",
+        "quantity": {
+            "type": "variable",
+            "value": "A:1 B:1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "5",
+        "code": "013405200",
+        "description": "Fitting",
+        "quantity": {
+            "type": "variable",
+            "value": "B:1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "6",
+        "code": "580014635",
+        "description": "Tube",
+        "quantity": {
+            "type": "variable",
+            "value": "B:1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "7",
+        "code": "019899100",
+        "description": "Fitting",
+        "quantity": {
+            "type": "variable",
+            "value": "B:2"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "8",
+        "code": "580014637",
+        "description": "Hose",
+        "quantity": {
+            "type": "variable",
+            "value": "B:1"
+        },
+        "obs": "Lift Height=4625mm",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "8",
+        "code": "580018418",
+        "description": "Hose",
+        "quantity": {
+            "type": "variable",
+            "value": "B:1"
+        },
+        "obs": "Lift Height=5395mm",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "9",
+        "code": "056731900",
+        "description": "Fitting",
+        "quantity": {
+            "type": "variable",
+            "value": "B:1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "10",
+        "code": "504071729",
+        "description": "Fitting",
+        "quantity": {
+            "type": "variable",
+            "value": "B:1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "11",
+        "code": "580014634",
+        "description": "Tube",
+        "quantity": {
+            "type": "variable",
+            "value": "B:1"
+        },
+        "obs": "Lift Height=4625mm",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10121",
+        "forklifts": "A959",
+        "ref": "11",
+        "code": "580018432",
+        "description": "Tube",
+        "quantity": {
+            "type": "variable",
+            "value": "B:1"
+        },
+        "obs": "Lift Height=5395mm",
+        "section": "HYDRAULIC ARRANGEMENT",
+        "pag": 402
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": " ",
+        "code": "580014493",
+        "description": "Pump And Motor Assembly",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "1",
+        "code": "580014492",
+        "description": "Motor Assy",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "2",
+        "code": "580014491",
+        "description": "Kit-Brush",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "3",
+        "code": "063621900",
+        "description": "Ball Bearing",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "4",
+        "code": "582009564",
+        "description": "Bearing",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "5",
+        "code": "580023828",
+        "description": "Coupling",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "6",
+        "code": "580014480",
+        "description": "Relief Valve",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "7",
+        "code": "580062570",
+        "description": "Reservoir",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "8",
+        "code": "518818830",
+        "description": "Strainer",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "9",
+        "code": "580027872",
+        "description": "Hyd Oil Fill Cap",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "10",
+        "code": "580063350",
+        "description": "Tube Assy",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "11",
+        "code": "580014481",
+        "description": "Pump",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "12",
+        "code": "580064632",
+        "description": "Flow Valve",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "13",
+        "code": "580014489",
+        "description": "Valve , Proportional",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "14",
+        "code": "580027871",
+        "description": "Tube Assy",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "15",
+        "code": "580014479",
+        "description": "Distributor",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "16",
+        "code": "518818806",
+        "description": "Valve",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "17",
+        "code": "449001023",
+        "description": "Capscrew",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "19",
+        "code": "580013474",
+        "description": "Support , Rubber",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "20",
+        "code": "272013200",
+        "description": "Vibration Damper",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "20",
+        "code": "582001077",
+        "description": "Vibration Damper",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": "21",
+        "code": "449021006",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "2"
+        },
+        "obs": "",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "B10122",
+        "forklifts": "A959",
+        "ref": " ",
+        "code": "580014482",
+        "description": "Hydraulic Tank Kit",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "Includes Items 7-10, 14",
+        "section": "HYDRAULIC POWER PACK",
+        "pag": 404
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "1",
+        "code": "580065150",
+        "description": "Load Backrest",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "2",
+        "code": "580061459",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "3",
+        "code": "449021010",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "8"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "4",
+        "code": "580013371",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "5",
+        "code": "524138883",
+        "description": "Forks Carriage",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "7",
+        "code": "504233232",
+        "description": "Shim (0.020 in.)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "8",
+        "code": "518797634",
+        "description": "Load Roller (\"B\") (3.24 in.)",
+        "quantity": {
+            "type": "unique",
+            "value": "6"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "9",
+        "code": "015916300",
+        "description": "Snap Ring",
+        "quantity": {
+            "type": "unique",
+            "value": "6"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "10",
+        "code": "449022013",
+        "description": "Lockwasher",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "a Not Illustrated",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10123",
+        "ref": "11",
+        "code": "272467500",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "a Not Illustrated",
+        "section": "FORKS CARRIAGE TWO STAGE LIMITED FREE-LIFT MAST",
+        "pag": 53
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "1",
+        "code": "580065150",
+        "description": "Load Backrest",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "2",
+        "code": "580061459",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "3",
+        "code": "449021010",
+        "description": "Washer",
+        "quantity": {
+            "type": "unique",
+            "value": "8"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "4",
+        "code": "580013371",
+        "description": "Nut",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "5",
+        "code": "524138884",
+        "description": "Forks Carriage",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "7",
+        "code": "504233232",
+        "description": "Shim (0.020 in.)",
+        "quantity": {
+            "type": "variable",
+            "value": "AR"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "8",
+        "code": "518797634",
+        "description": "Load Roller (\"B\") (3.24 in.)",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "9",
+        "code": "015916300",
+        "description": "Snap Ring",
+        "quantity": {
+            "type": "unique",
+            "value": "4"
+        },
+        "obs": "",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "10",
+        "code": "449022013",
+        "description": "Lockwasher",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "a Not Illustrated",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    },
+    {
+        "catalog": "A959",
+        "forklifts": "B10124",
+        "ref": "11",
+        "code": "272467500",
+        "description": "Screw",
+        "quantity": {
+            "type": "unique",
+            "value": "1"
+        },
+        "obs": "a Not Illustrated",
+        "section": "FORKS CARRIAGE THREE STAGE FULL FREE-LIFT MAST",
+        "pag": 55
+    }
+]
