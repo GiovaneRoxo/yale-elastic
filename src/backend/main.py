@@ -28,6 +28,6 @@ app.include_router(users_me.router)
 Base.metadata.create_all(bind=engine)
 
 script_dir = os.path.dirname(__file__)
-assets_path = os.path.join(script_dir, "../../assets")
+assets_path = os.path.join(script_dir, "../../tools/upload")
 
 app.mount("/assets", StaticFiles(directory=assets_path), name="assets")
